@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Variables
+$primary-blue: #3b82f6;
+$font-family-poppins: 'Poppins', sans-serif;
+
+@layer base {
+  html {
+    font-family: $font-family-poppins, 'Inter', system-ui, sans-serif;
+  }
+
+  body {
+    @apply bg-gray-950 text-white;
+  }
+}
+
+@layer utilities {
+  // Line clamp utilities
+  .line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+
+  // Poppins font utilities
+  .font-poppins {
+    font-family: $font-family-poppins;
+  }
+
+  .font-poppins-light {
+    font-family: $font-family-poppins;
+    font-weight: 300;
+  }
+
+  .font-poppins-medium {
+    font-family: $font-family-poppins;
+    font-weight: 500;
+  }
+
+  .font-poppins-semibold {
+    font-family: $font-family-poppins;
+    font-weight: 600;
+  }
+
+  .font-poppins-bold {
+    font-family: $font-family-poppins;
+    font-weight: 700;
+  }
+
+  .font-poppins-extrabold {
+    font-family: $font-family-poppins;
+    font-weight: 800;
+  }
+
+  .font-poppins-black {
+    font-family: $font-family-poppins;
+    font-weight: 900;
+  }
+}
+
+// Custom scrollbar
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-700 rounded;
+
+  &:hover {
+    @apply bg-gray-600;
+  }
+}
+
+// Smooth scrolling
+html {
+  scroll-behavior: smooth;
+}
+
+// Focus styles
+*:focus {
+  outline: 2px solid $primary-blue;
+  outline-offset: 2px;
+}
+
+// Selection styles
+::selection {
+  @apply bg-blue-600 text-white;
+}
+
+// Dark mode styles
+.dark {
+  color-scheme: dark;
+}
