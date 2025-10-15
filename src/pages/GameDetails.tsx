@@ -57,7 +57,7 @@ export const GameDetails = () => {
   return (
     <div className='min-h-screen bg-gray-950'>
       {/* Back Button */}
-      <div className='px-6 py-6 mx-auto max-w-7xl '>
+      <div className='px-6 py-6 mx-auto max-w-[1600px] '>
         <button
           onClick={() => navigate(-1)}
           className='flex items-center gap-2 text-gray-200 transition-colors hover:text-white'
@@ -82,7 +82,7 @@ export const GameDetails = () => {
       </div>
 
       {/* Content */}
-      <div className='relative z-10 px-6 mx-auto -mt-32 max-w-7xl'>
+      <div className='relative z-10 px-6 mx-auto -mt-32 max-w-[1600px]'>
         <div className='grid grid-cols-1 gap-8 lg:grid-cols-3'>
           {/* Main Content */}
           <div className='space-y-8 lg:col-span-2'>

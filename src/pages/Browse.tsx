@@ -61,7 +61,7 @@ export const Browse = () => {
 
   return (
     <div className='min-h-screen py-12 bg-gray-950'>
-      <div className='px-6 mx-auto max-w-7xl'>
+      <div className='px-6 mx-auto max-w-[1600px]'>
         {/* Header */}
         <div className='flex items-center justify-between mb-8'>
           <div>
@@ -134,9 +134,9 @@ export const Browse = () => {
           </div>
         </div>
 
-        <div className='grid grid-cols-1 gap-8 lg:grid-cols-4'>
+        <div className='grid grid-cols-1 gap-8 lg:grid-cols-5'>
           {/* Filters Sidebar */}
-          <div
+          <aside
             className={`lg:block ${showFilters ? 'block' : 'hidden'} space-y-6`}
           >
             {/* Genre Filter */}
@@ -193,10 +193,10 @@ export const Browse = () => {
                 ))}
               </div>
             </div>
-          </div>
+          </aside>
 
           {/* Games Grid */}
-          <div className='lg:col-span-3'>
+          <div className='lg:col-span-4'>
             <GameGrid games={filteredGames} />
           </div>
         </div>

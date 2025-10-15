@@ -27,7 +27,7 @@ export const Navbar = () => {
 
   return (
     <nav className='sticky top-0 z-50 border-b border-gray-800 bg-gray-900/95 backdrop-blur-sm'>
-      <div className='px-6 mx-auto max-w-7xl'>
+      <div className='px-6 mx-auto max-w-[1600px]'>
         <div className='flex items-center justify-between h-16'>
           {/* Logo */}
           <Link to='/' className='flex items-center gap-3'>

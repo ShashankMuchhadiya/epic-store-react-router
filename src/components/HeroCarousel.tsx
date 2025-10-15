@@ -17,20 +17,20 @@ export const HeroCarousel = ({ games }: HeroCarouselProps) => {
   const PrevArrow = ({ onClick }: { onClick?: () => void }) => (
     <button
       onClick={onClick}
-      className='absolute left-4 top-1/2 z-10 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-black/50 text-white transition-all duration-300 hover:bg-black/70 hover:scale-110 backdrop-blur-sm'
+      className='absolute z-10 flex items-center justify-center w-12 h-12 text-white transition-all duration-300 -translate-y-1/2 rounded-full left-4 top-1/2 bg-black/50 hover:bg-black/70 hover:scale-110 backdrop-blur-sm'
       aria-label='Previous slide'
     >
-      <ChevronLeft className='h-6 w-6' />
+      <ChevronLeft className='w-6 h-6' />
     </button>
   );
 
   const NextArrow = ({ onClick }: { onClick?: () => void }) => (
     <button
       onClick={onClick}
-      className='absolute right-4 top-1/2 z-10 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-black/50 text-white transition-all duration-300 hover:bg-black/70 hover:scale-110 backdrop-blur-sm'
+      className='absolute z-10 flex items-center justify-center w-12 h-12 text-white transition-all duration-300 -translate-y-1/2 rounded-full right-4 top-1/2 bg-black/50 hover:bg-black/70 hover:scale-110 backdrop-blur-sm'
       aria-label='Next slide'
     >
-      <ChevronRight className='h-6 w-6' />
+      <ChevronRight className='w-6 h-6' />
     </button>
   );
 
@@ -70,7 +70,7 @@ export const HeroCarousel = ({ games }: HeroCarouselProps) => {
             </div>
 
             {/* Content */}
-            <div className='relative flex items-center h-full px-6 mx-auto max-w-7xl'>
+            <div className='relative flex items-center h-full px-6 mx-auto max-w-[1600px]'>
               <div className='max-w-2xl'>
                 {/* Badges */}
                 <div className='flex gap-2 mb-4'>
